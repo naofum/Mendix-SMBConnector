@@ -14,13 +14,14 @@ The **SMB connector** can be used to read and write SMB (Windows shared) files.
 
 
 ## Configuration options
-		
 - specify smbpath like smb://hostname/folder/filename.ext
 
 
 ## License
-Licensed under the GPL license.
+- This module Licensed under the GPL v3+ (see. https://www.gnu.org/licenses/gpl-3.0.en.html)
+- This module contains jCIFS library which is Licensed under the LGPL v2.1 (see. https://www.gnu.org/licenses/lgpl-2.1.en.html)
 
 
 ## Version history
-0.1 first functions for SMB Connector implemented
+1.0.0 first release beta for public
+0.1.0 first functions for SMB Connector implemented
