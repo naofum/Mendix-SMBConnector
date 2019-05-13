@@ -23,6 +23,6 @@ The **SMB connector** can be used to read and write SMB (Windows shared) files.
 
 
 ## Version history
-1.0.1 fixed example
-1.0.0 first release beta for public
-0.1.0 first functions for SMB Connector implemented
+-1.0.1 fixed example
+-1.0.0 first release beta for public
+-0.1.0 first functions for SMB Connector implemented

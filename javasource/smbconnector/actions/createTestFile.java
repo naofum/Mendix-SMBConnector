@@ -9,9 +9,18 @@
 
 package smbconnector.actions;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.lang.Iterable;
+import java.util.List;
+import java.util.Map;
+import com.mendix.core.Core;
+import com.mendix.core.CoreException;
+import com.mendix.logging.ILogNode;
+import com.mendix.systemwideinterfaces.core.IMendixIdentifier;
+import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public class createTestFile extends CustomJavaAction<IMendixObject>
 {
@@ -24,7 +33,11 @@ public class createTestFile extends CustomJavaAction<IMendixObject>
 	public IMendixObject executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
+		InputStream inputStream = new ByteArrayInputStream("This is a test file.".getBytes());
+		IMendixObject obj = Core.instantiate(getContext(), "System.FileDocument");
+		Core.storeFileDocumentContent(getContext(), obj, inputStream);
+		inputStream.close();
+		return obj;
 		// END USER CODE
 	}
 
