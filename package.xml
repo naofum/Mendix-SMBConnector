@@ -12,6 +12,7 @@
       <file path="userlib\smbj-0.1.0.jar.SMBConnector.RequiredLib" />
       <file path="javasource\smbconnector\actions\readFile.java" />
       <file path="javasource\smbconnector\actions\saveFile.java" />
+      <file path="javasource\smbconnector\actions\createTestFile.java" />
     </files>
   </modelerProject>
 </package>
