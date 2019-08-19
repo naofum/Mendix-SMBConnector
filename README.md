@@ -10,10 +10,11 @@ The **SMB connector** can be used to read and write SMB (Windows shared) files.
 ## Installation
 * Import the module **SMB connector** in your project (from the Mendix AppStore or by downloading and exporting the module from this project)
 
-* You can use Java action (readFile/saveFile) to read and write SMB files.
+* You can use Java action (readFile/saveFile) to read and write SMB files with on-premise environment.
 
 
 ## Configuration options
+- enable SMB 1.0 feature in Turn Windows features on or off settings.
 - specify smbpath like smb://hostname/folder/filename.ext
 
 
@@ -23,6 +24,7 @@ The **SMB connector** can be used to read and write SMB (Windows shared) files.
 
 
 ## Version history
--1.0.1 fixed example
--1.0.0 first release beta for public
--0.1.0 first functions for SMB Connector implemented
+- 2.0.0 Converted to Mx 8.0.0
+- 1.0.1 fixed example
+- 1.0.0 first release beta for public
+- 0.1.0 first functions for SMB Connector implemented
